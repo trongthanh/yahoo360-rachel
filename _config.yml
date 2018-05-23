@@ -5,16 +5,15 @@ url: "https://int3ractive.com"
 gaid: UA-4430452-4
 
 # SEO & Social networks
-title: Yahoo! 360° - Rachel's Profile
+title: ''
 author: Rachel Nguyen
 image: img/cover.jpg
 description: ""
 
 # Build settings
 defaults:
-  -
-    scope:
-      path: '_posts/'
+  - scope:
+      path: ''
     values:
       layout: post
 markdown: kramdown
@@ -22,7 +21,7 @@ kramdown:
   input: GFM
 highlighter: rouge
 permalink: /blog/:year-:month-:day-:title.html
-paginate: 10
+paginate: 25
 paginate_path: "/blog/page:num/"
 exclude: ["README.md", "css/**/*", "_private"]
 keep_files: ["flash", "javascript"]

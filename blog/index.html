@@ -1,38 +1,62 @@
 ---
-layout: blog
+layout: default
+title: Yahoo! 360° - Rachel's Blog
+left_widget: calendar.html
 ---
 
-<div class="container-1 publish intro ">
-	<span class="shadow"></span>
-	<div class="thm-box">
-		<span class="ct"><span class="cl"></span></span>
+<span class="pagination top">
 
-		<div class="head">
-			<h3>Blog</h3>
-			<span class="datestamp">Sun Apr 05 11:13am ICT</span>
-		</div>
+<span><em>1 - 5</em> of <em class="limit">25</em> First | &lt; Prev | <a href="" id="num_next">Next &gt;</a> | <a href="" id="num_last">Last</a></span>
+</span>
+<div id="ymgl-blog" class="container-0 publish">
+    <span class="shadow"></span>
+    <div class="thm-box">
+        <span class="ct"><span class="cl"></span></span>
 
-		<div class="body">
-			{% for post in paginator.posts %}
-			<div class="post-preview">
-				<a href="{{ post.url | prepend: site.baseurl }}">
-					<h2 class="post-title">
-						{{ post.title }}
-					</h2>
-					{% if post.subtitle %}
-					<h3 class="post-subtitle">
-						{{ post.subtitle }}
-					</h3>
-					{% endif %}
-				</a>
-				<p class="post-meta">
-					<span>Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}.</span>
-				</p>
-			</div>
-			<hr>
-			{% endfor %}
-		</div>
-		<span class="cb"><span class="cl"></span></span>
-	</div>
+        <div class="head">
+            <h3>Rachel's Blog <span class="view-toggle">Full Post View | <a href="javascript:;">List View</a></span></h3>
+            <p class="footnote"></p>
+        </div>
+
+        <dl class="body">
+		{% for post in paginator.posts %}
+            <dt class="post-head">{{ post.title }}</dt>
+            <dd class="post-body ">
+
+                <div class="image-wrapper">
+
+                </div>
+                <div class="content-wrapper">
+                	{{ post.content | strip_html | truncatewords: 100 }}
+                </div>
+
+                <div class="foot">
+                    <span><span style="display:inline" id="tag-container-62"><a href="" rel="nofollow tag"></a></span></span>
+                    <form>
+                        <input type="hidden" name="tagslist" value="" id="tag-list-62">
+                    </form>
+                    <div class="alert" style="display:none" id="tag-error-62"></div>
+
+                    <span>
+                    	{{ post.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }}
+                    	<a href="{{ post.url | relative_url }}">Permanent Link</a> | <a href="{{ post.url | relative_url }}#comments">1 Comment</a></span>
+                </div>
+            </dd>
+		{% endfor %}
+        </dl>
+
+        <div class="add-rss clearfix">
+            <p class="footnote">Add Rachel's Blog to your personalized My Yahoo! page:</p>
+            <a href="javascript:;"><img src="{{'/assets/addtomyyahoo4.gif' | relative_url}}" alt="Add to My Yahoo!" height="17" width="91" border="0"></a>
+            <a href="{{ '/feed.xml' | relative_url }}"><img src="{{'/assets/rss.gif' | relative_url}}" alt="RSS" height="17" width="36" border="0"></a> <a href="{{ '/404.html' | relative_url }}">About My Yahoo! &amp; RSS</a>
+        </div>
+
+        <span class="cb"><span class="cl"></span></span>
+    </div>
 </div>
+<span class="pagination bottom">
+
+<span><em>1 - 5</em> of <em class="limit">25</em> First | &lt; Prev | <a href="" id="num_next">Next &gt;</a> | <a href="" id="num_last">Last</a></span>
+</span>
+
 

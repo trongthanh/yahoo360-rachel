@@ -24,36 +24,57 @@ const posts = rawPosts.map(post => {
 });
 // console.log('sample comments:', posts[0].comments);
 
+// collect comments to a data file
+const allComments = {};
+
 posts.forEach((post, index) => {
-	let md = `${post.body}
-<aside>
-${post.comments.reduce((str, comment) => {
-		if (str) {
-			return `${str}</div>\n<div class="comment">${comment}`;
-		}
-		return `<div class="comment">${comment}`;
-	}, '')}
-</div>
-</aside>
-`;
-	const dateStr = /date: ?(.*)/.exec(md)[1];
-	const title = /title: ?(.*)/.exec(md)[1];
+	let body = post.body;
+	const dateStr = /date: ?(.*)/.exec(body)[1];
+	const title = /title: ?(.*)/.exec(body)[1];
 	const date = new Date(dateStr);
 	// fix timezone (time in the backup is UTC)
 	date.setHours(date.getHours() + 7);
 
 	// prettier-ignore
-	const fileName = `../_posts/${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}-${slugify(title)}.html`;
+	const fileName = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}-${slugify(title)}`;
 
 	// normalize date string
-	md = md.replace(/date: ?(.*)/g, `date: ${toIsoString(date)}`);
+	body = body.replace(/date: ?(.*)/g, `date: ${toIsoString(date)}`);
 
-	fs.writeFile(path.join(__dirname, fileName), md, err => {
+	// write body text to _posts/
+	fs.writeFile(path.join(__dirname, `../_posts/${fileName}.html`), body, err => {
 		if (err) {
 			throw err;
 		}
-		console.log(`The file ${fileName} has been saved!`);
+		console.log(`The file ../_posts/${fileName}.html has been saved!`);
 	});
+
+	// process comments
+	const postComments = post.comments.map(comment => {
+		const author = /comment_author: ?(.*)/.exec(comment)[1];
+		const content = /comment_body:\n([\s\S]*)/.exec(comment)[1];
+		let time = /comment_time: ?(.*)/.exec(comment)[1];
+		time = new Date(time);
+		// fix timezone (time in the backup is UTC)
+		time.setHours(time.getHours() + 7);
+		time = toIsoString(time);
+
+		return {
+			author,
+			time,
+			content,
+		};
+	});
+
+	allComments[`/blog/${fileName}.html`] = postComments;
+});
+
+// write comments data file to _data/
+fs.writeFile(path.join(__dirname, '../_data/comments.json'), JSON.stringify(allComments, null, '\t'), err => {
+	if (err) {
+		throw err;
+	}
+	console.log('The file comments.json has been written!');
 });
 
 function slugify(str) {

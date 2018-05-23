@@ -254,7 +254,7 @@ input.active {
 	*padding/**/: 2px 10px 0 10px;
 }
 .snippet {
-	font: 89% georgia;
+	font-family: georgia, sans-serif;
 }
 img.avatar {
 	border: 6px solid #ccc;
@@ -2344,6 +2344,10 @@ span.edit .cb .cl {
 	font-weight: bold;
 	margin: 0 0 2px 0;
 	*margin-bottom: -2px;
+	/* Thanh's addition to make use of modern css ellipsis */
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .user-card .vitals .opi,
