@@ -2320,6 +2320,7 @@ span.edit .cb .cl {
 	clear: both;
 	float: none;
 	margin: 0;
+	object-fit: cover;
 }
 
 .user-card .no-photo {

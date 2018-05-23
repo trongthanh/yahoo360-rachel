@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<link rel="icon" type="image/png" href="/favicon.png">
+	<link rel="icon" type="image/png" href="{{ 'favicon.png' | relative_url }}">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="Content-Style-Type" content="text/css">
@@ -17,7 +17,8 @@
 	<meta name="ad-state" content="ca">
 	<meta name="ad-city" content="Sunnyvale">
 	<meta name="ad-zip" content="94089">
-	<meta name="ad-geocode" content="DOC.AD_MIME_GEOCODE"> {% seo %}
+	<meta name="ad-geocode" content="DOC.AD_MIME_GEOCODE">
+	{% seo %}
 
 	<link type="text/css" rel="stylesheet" href="{{ 'assets/ymgl_global_200608161000.css' | relative_url }}" media="screen">
 	<link type="text/css" rel="stylesheet" href="{{ 'assets/container_2.css' | relative_url }}" media="screen">
@@ -701,8 +702,40 @@
 			padding-top: 0;
 		}
 
-		#ymgl-friends .body {
-			margin: 0;
+		#ymgl-friends .body ul.friend-list {
+		    padding: 0;
+		    margin: 10px 0 15px 0;
+		    list-style: none;
+		}
+
+		#ymgl-friends .body.body-full .friend-list {
+			width: auto;
+		}
+
+		#ymgl-friends.publish .body-full {
+			margin: 0 25px 0 25px;
+			min-height: 50px;
+			*height: 50px;
+		}
+
+		#ymgl-friends .body li.friend {
+		    float: left;
+		    margin: 0 7px 10px 0;
+		    min-height: 10.25em;
+		    * height: 10.25em;
+		    width: 80px;
+		}
+
+		#ymgl-friends .body li.friend .user-card {
+		    clear: left;
+		    clear: none;
+		    float: right;
+		    margin: 0;
+		    width: 80px;
+		}
+
+		#ymgl-friends .body li.friend .user-card .vitals .opi {
+		   white-space:normal;
 		}
 
 		#ymgl-friends .body .encourage {
@@ -850,6 +883,66 @@
 		}
 
 		/*end friends*/
+		#ymgl-lists .row {
+		    margin: 0 0 10px 0;
+		    border-bottom: 1px solid #d4d4d4;
+		    padding-bottom: 10px;
+		    *height: 1px;
+		}
+
+		#ymgl-lists .row .head {
+		    text-align: right;
+		    clear: both;
+		    float: none;
+		    margin: 0 0 7px 0;
+		}
+
+		#ymgl-lists .row .head h4 {
+		    clear: none;
+		    float: left;
+		    font-size: 100%;
+		    font-weight: bold;
+		    margin: 0 0 7px 0;
+		}
+
+		#ymgl-lists .row .head .datestamp {
+		    display: block;
+		    clear: left;
+		    clear: none;
+		    float: right;
+		    font-size: 74%;
+		    font-family: verdana, arial, helvetica, sans-serif;
+		    font-style: normal;
+		    text-align: right;
+		    line-height: 1.1em;
+		}
+
+		#ymgl-lists .row p {
+		    font-size: 89%;
+		    font-family: georgia, times new roman, serif;
+		    margin: 0 15px 0 0;
+		}
+
+		#ymgl-lists .row ul, #ymgl-lists .row ol {
+		    clear: none;
+		    * clear: right;
+		    float: left;
+		    width: 40%;
+		}
+
+		#ymgl-lists .row ol {*padding-left: 10px;}
+
+		#ymgl-lists .last {border: 0;}
+
+		#ymgl-lists .row .footnote {
+		    font-size: 100%;
+		    font-family: arial, helvetica, sans-serif;
+		    text-align: right;
+		    margin: 0 15px 15px 0;
+		}
+
+		#ymgl-lists .row .footnote a:visited {color: #247CD4;}
+
 	</style>
 
 	<!-- Original URL:  http://360.yahoo.com:80/profile-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1
@@ -868,15 +961,15 @@
 
 		</div>
 		<div class="container-0" id="ymgl-feedback">
-			<span class="caption"><a href="https://web.archive.org/web/20090413012733/http://blog.360.yahoo.com/product_360">Yahoo! 360° News</a> | <a href="https://web.archive.org/web/20090413012733/http://add.yahoo.com/fast/help/us/360/cgi_feedback">Beta Feedback</a></span>
+			<span class="caption"><a href="{{ '404.html' | relative_url }}">Yahoo! 360° News</a> | <a href="{{ '404.html' | relative_url }}">Beta Feedback</a></span>
 		</div>
 		<div class="container-0" id="ymgl-masthead">
 			<span class="ct"><span class="cl"></span></span>
 
-			<span class="button"><a href="https://web.archive.org/web/20090413012733/http://us.rd.yahoo.com/evt=35266/*http://upload.360.yahoo.com/reg/new_user.html?.login=1">Start your own Yahoo! 360° page</a></span>
+			<span class="button"><a href="{{ '404.html' | relative_url }}">Start your own Yahoo! 360° page</a></span>
 
 			<div class="body">
-				<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/?.login=1">Home</a>|<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/my_profile.html">My Page</a>|<a href="https://web.archive.org/web/20090413012733/http://blog.360.yahoo.com/blog/">My Blog</a>|<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/friends/index.html">My Friends</a>|<a href="https://web.archive.org/web/20090413012733/http://message.360.yahoo.com/mailbox/">Mailbox</a>|<a href="https://web.archive.org/web/20090413012733/http://message.360.yahoo.com/invites/compose.html">Invite</a>|<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/search.html">Search</a>|<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/edit/identity.html">Settings</a>
+				<a href="{{ '404.html' | relative_url }}">Home</a>|<a href="{{ '404.html' | relative_url }}">My Page</a>|<a href="{{ '404.html' | relative_url }}">My Blog</a>|<a href="{{ '404.html' | relative_url }}">My Friends</a>|<a href="{{ '404.html' | relative_url }}">Mailbox</a>|<a href="{{ '404.html' | relative_url }}">Invite</a>|<a href="{{ '404.html' | relative_url }}">Search</a>|<a href="{{ '404.html' | relative_url }}">Settings</a>
 			</div>
 			<span class="cb"><span class="cl"></span></span>
 		</div>
@@ -899,8 +992,8 @@
 							<p>
 								<a href="{{ '/' | relative_url }}">Top Page</a> &nbsp;|&nbsp;
 								<a href="{{ 'blog/' | relative_url }}">Blog</a> &nbsp;|&nbsp;
-								<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/friends-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1">Friends</a> &nbsp;|&nbsp;
-								<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/lists-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1">Lists</a>
+								<a href="{{ 'friends.html' | relative_url }}">Friends</a> &nbsp;|&nbsp;
+								<a href="{{ 'lists.html' | relative_url }}">Lists</a>
 
 							</p>
 						</div>
@@ -910,19 +1003,19 @@
 								<div class="user-card" id="user-photos">
 
 									<div class="user-photo" id="user-photos-wrap">
-										<img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="e9a1" id="user-photos-full" width="190" height="143" border="">
+										<img src="{{ 'assets/profile-pic.jpg' | relative_url }}" id="user-photos-full" width="190" border="">
 									</div>
 									<div class="thumb-wrapper" id="user-photos-thumbs">
-										<span><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="c951" width="60" height="45" border=""></span>
-										<span><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="b9d6" width="60" height="41" border=""></span>
-										<span><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="cb82" width="60" height="80" border=""></span>
+										<span><img src="{{ 'assets/profile-pic0.jpg' | relative_url }}" width="60" border=""></span>
+										<span><img src="{{ 'assets/profile-pic2.jpg' | relative_url }}" width="60" border=""></span>
+										<span><img src="{{ 'assets/profile-pic3.jpg' | relative_url }}" width="60" border=""></span>
 									</div>
 
 								</div>
 							</div>
 
 							<div class="action-shadow">
-								<p class="action"><a href="https://web.archive.org/web/20090413012733/http://message.360.yahoo.com/invites/confirm.html?id=8VWylvA3eqoZfG4NlXu2IrQuBg--" class="bullet-add">Add</a></p>
+								<p class="action"><a href="https://www.facebook.com/thao.rachel.nguyen" class="bullet-add">Add</a></p>
 							</div>
 
 							<p class="degree">
@@ -935,10 +1028,10 @@
 								<ul>
 
 									<li class="opi ">
-										<a href="https://web.archive.org/web/20090413012733/ymsgr:sendIM?fallgrass84" title="Offline IM"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline IM</a>
+										<a href="ymsgr:sendIM?fallgrass84" title="Offline IM"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline IM</a>
 									</li>
 
-									<li class="send-message last"><a href="https://web.archive.org/web/20090413012733/http://message.360.yahoo.com/mailbox/message/compose-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1">Send Message</a></li>
+									<li class="send-message last"><a href="https://www.facebook.com/thao.rachel.nguyen">Send Message</a></li>
 
 								</ul>
 								<span class="cb"><span class="cl"></span></span>
@@ -946,10 +1039,10 @@
 
 							<ul class="options">
 
-								<li><strong><a href="https://web.archive.org/web/20090413012733/ymsgr:addfriend?fallgrass84">Add to Messenger</a></strong></li>
+								<li><strong><a href="ymsgr:addfriend?fallgrass84">Add to Messenger</a></strong></li>
 
-								<li><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/friends/ignore_list.html?ignore=8VWylvA3eqoZfG4NlXu2IrQuBg--&amp;.crumb=">Ignore</a> this person <span><a href="https://web.archive.org/web/20090413012733/http://help.yahoo.com/l/us/yahoo/360/friends/friends-04.html" title="Learn what it means to ignore someone.">(What's this?)</a></span></li>
-								<li><a href="https://web.archive.org/web/20090413012733/http://add.yahoo.com/fast/help/us/360/cgi_abuse">Report for abuse</a></li>
+								<li><a href="{{ '404.html' | relative_url }}">Ignore</a> this person <span><a href="{{ '404.html' | relative_url }}" title="Learn what it means to ignore someone.">(What's this?)</a></span></li>
+								<li><a href="{{ '404.html' | relative_url }}">Report for abuse</a></li>
 							</ul>
 							<ul id="ymgl-customize-links" class="options">
 								<li></li>
@@ -1120,250 +1213,14 @@
 					<div class="thm-box" id="jBlast-thm-box">
 						<span class="ct"><span class="cl"></span></span>
 						<span class="tail"></span>
-						<p class="content" id="jBlastGraph"><span class="snippet">This is not the life I want</span><span id="linksspan" class="links"> <a href="https://web.archive.org/web/20090413012733/http://message.360.yahoo.com/mailbox/message/compose-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1&amp;blst=1" class="action-link">Reply</a></span></p>
+						<p class="content" id="jBlastGraph"><span class="snippet">This is not the life I want</span><span id="linksspan" class="links"> <a href="{{ '404.html' | relative_url }}" class="action-link">Reply</a></span></p>
 
 						<span class="cb"><span class="cl"></span></span>
 					</div>
 				</div>
 
-				<div class="doc-layout-5">
-					<span class="beacon"></span>
+				{{ content }}
 
-					{{ content }}
-				</div>
-
-				<div class="doc-layout-4">
-
-					<div class="container-0 publish intro" id="ymgl-photos">
-						<span class="shadow"></span>
-						<div class="thm-box">
-							<span class="ct"><span class="cl"></span></span>
-
-							<div class="head">
-								<h3>Photos</h3>
-								<span class="datestamp">Oct 21, 2007</span>
-							</div>
-
-							<div class="body">
-
-								<div class="flickr medium clearfix last">
-									<a href="https://web.archive.org/web/20090413012733/http://www.flickr.com/photos/75071908@N00/1668310435/" title="Tui trắng nhất nhé, khỏi giành giựt :D" target="_blank"><img src="{{ 'assets/1668310435_2f14eb26bd_s.jpg' | relative_url }}" alt="Tui trắng nhất nhé, khỏi giành giựt :D" width="75" height="75" border="0"></a>
-									<a href="https://web.archive.org/web/20090413012733/http://www.flickr.com/photos/75071908@N00/1669163934/" title="2 bạn mới rất thân" target="_blank"><img src="{{ 'assets/1669163934_e3954ee6c8_s.jpg' | relative_url }}" alt="2 bạn mới rất thân" width="75" height="75" border="0"></a>
-									<a href="https://web.archive.org/web/20090413012733/http://www.flickr.com/photos/75071908@N00/1669162150/" title="Cùng 1 hành lang" target="_blank"><img src="{{ 'assets/1669162150_dcff79d394_s.jpg' | relative_url }}" alt="Cùng 1 hành lang" width="75" height="75" border="0"></a>
-									<a href="https://web.archive.org/web/20090413012733/http://www.flickr.com/photos/75071908@N00/1668305117/" title="B*day party đen vàng" target="_blank"><img src="{{ 'assets/1668305117_96aa089891_s.jpg' | relative_url }}" alt="B*day party đen vàng" width="75" height="75" border="0"></a>
-									<p class="footnote"><a href="https://web.archive.org/web/20090413012733/http://www.flickr.com/photos/75071908@N00/" target="_new">Photostream »</a></p>
-
-								</div>
-
-							</div>
-							<span class="cb"><span class="cl"></span></span>
-						</div>
-					</div>
-					<div class="container-0 publish intro " id="ymgl-friends">
-						<span class="shadow"></span>
-						<div class="thm-box" id="friends-container">
-							<span class="ct"><span class="cl"></span></span>
-							<div class="head">
-								<h3>Friends</h3><span></span> <span class="friends-count">(<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/friends-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1">See all 165</a>)</span>
-							</div>
-							<div class="body" id="friends-container">
-
-								<ul class="column-1">
-
-									<li class="card-wrapper " id="friend_0">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-6OiYk7klc6e8qDpYIEhb3YY-?cq=1" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="eb19" class="" alt="Sansan" width="64" height="48" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-6OiYk7klc6e8qDpYIEhb3YY-?cq=1" title="Sansan">Sansan</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-									<li class="card-wrapper " id="friend_2">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-0NwosvU_c7PENf4Tjf0k1Ek-?cq=1" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="28fb" class="" alt="Nhu Khang" width="64" height="46" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-0NwosvU_c7PENf4Tjf0k1Ek-?cq=1" title="Nhu Khang">Nhu K…</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-									<li class="card-wrapper " id="friend_4">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-X3KGLV8zd7N3V22H5m54e.fsEXk-?cq=1" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="31de" class="" alt="Đình Duy" width="64" height="48" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-X3KGLV8zd7N3V22H5m54e.fsEXk-?cq=1" title="Đình Duy">Đình …</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-									<li class="card-wrapper " id="friend_6">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-KlYuT_o3fqNJLvI_Zo5F" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="2400" class="" alt="feet_ww" width="64" height="46" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-KlYuT_o3fqNJLvI_Zo5F" title="feet_ww">feet_ww</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-									<li class="card-wrapper " id="friend_8">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-9n3gmp8heqqEku0Emz16q8tM" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="28dc" class="" alt="~ MạnhCương ~" width="64" height="44" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-9n3gmp8heqqEku0Emz16q8tM" title="~ MạnhCương ~">~ Mạn…</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-								</ul>
-								<ul class="column-2">
-
-									<li class="card-wrapper " id="friend_1">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-N.SMrtoydLW2WuF3TxgZKrqx" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="f6f7" class="" alt="**⌠§ZHU_ZHU§⌡**" width="64" height="76" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-N.SMrtoydLW2WuF3TxgZKrqx" title="**⌠§ZHU_ZHU§⌡**">**⌠§Z…</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-									<li class="card-wrapper " id="friend_3">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-EeFJrU0zcqEUTZMV_gPIZFAVzsw-?cq=1" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="59fa" class="" alt="blackcat" width="64" height="85" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-EeFJrU0zcqEUTZMV_gPIZFAVzsw-?cq=1" title="blackcat">black…</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-									<li class="card-wrapper " id="friend_5">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-y52nvYwlc6ezq0akXCiwvX8-?cq=1" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="26cd" class="" alt="Phuong Thao M" width="64" height="57" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-y52nvYwlc6ezq0akXCiwvX8-?cq=1" title="Phuong Thao M">Phuon…</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-									<li class="card-wrapper " id="friend_7">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-_pCtsV0zdKtEdp_lVDf6" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="fb24" class="" alt="bom" width="64" height="48" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-_pCtsV0zdKtEdp_lVDf6" title="bom">bom</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-									<li class="card-wrapper " id="friend_9">
-										<div class="user-card ">
-
-											<div class="user-photo ">
-												<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-3fuzWoYic69n.HsQtbFiyMlGiWYY" title=""><img src="{{ 'assets/anonymous.png' | relative_url }}" data-identicon="9b7b" class="" alt="XIUXIU" width="64" height="48" border=""></a>
-											</div>
-
-											<ul class="vitals">
-
-												<li class="user-name"><a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/profile-3fuzWoYic69n.HsQtbFiyMlGiWYY" title="XIUXIU">XIUXIU</a></li>
-
-												<li class="opi"><img src="{{ 'assets/offline_12px_1.gif' | relative_url }}" width="12" height="12" border="0"> Offline </li>
-
-											</ul>
-
-										</div>
-									</li>
-
-								</ul>
-							</div>
-							<div class="foot">
-
-								<span class="footnote">(<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/friends-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1">See all 165 friends</a>)</span>
-							</div>
-							<span class="cb"><span class="cl"></span></span>
-						</div>
-					</div>
-
-				</div>
 			</div>
 		</div>
 	</div>

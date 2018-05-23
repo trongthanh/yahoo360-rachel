@@ -14,7 +14,7 @@ description: ""
 defaults:
   -
     scope:
-      path: ''
+      path: '_posts/'
     values:
       layout: post
 markdown: kramdown
