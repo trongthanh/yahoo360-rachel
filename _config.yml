@@ -1,0 +1,35 @@
+# Site settings
+email: fallgrass84@yahoo.com
+baseurl: "/yahoo360-rachel"
+url: "https://int3ractive.com"
+gaid: UA-4430452-4
+
+# SEO & Social networks
+title: Yahoo! 360° - Rachel's Profile
+author: Rachel Nguyen
+image: img/cover.jpg
+description: ""
+
+# Build settings
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: post
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+permalink: /blog/:year-:month-:day-:title.html
+paginate: 10
+paginate_path: "/blog/page:num/"
+exclude: ["README.md", "css/**/*", "_private"]
+keep_files: ["flash", "javascript"]
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji

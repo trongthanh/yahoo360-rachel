@@ -1,0 +1,931 @@
+/*general page layout*/
+#doc-head,
+#doc-foot {
+	margin-top: 0;
+	margin-bottom: 0;
+	min-width: 785px;
+}
+
+#ymgl-masthead {
+	margin-bottom: 0px;
+}
+
+.doc-layout-body {
+	margin-top: 0;
+	margin-bottom: -1px;
+	*margin-bottom: 0;
+	min-width: 785px;
+	position: relative;
+	top: -1px;
+	*top: 0;
+}
+
+#doc-head .beacon,
+#doc-foot .beacon {
+	width: 785px;
+}
+
+#doc-body .thm-wrapper {
+	margin-bottom: -1px;
+	*margin: 0;
+	padding: 0 10px;
+}
+
+#doc-body .thm-wrapper .doc-layout-1 {
+	left: 10px;
+	*left: 0;
+}
+
+#doc-body.my-page {
+	top: 0;
+	margin-bottom: 0;
+}
+
+#doc-body.doc-popup-body {
+	padding-top: 25px;
+	margin-bottom: 0;
+	top: 0;
+}
+
+#doc-body.doc-popup-body .thm-wrapper {
+	background: transparent;
+	min-height: 0;
+	*height: 0;
+	padding-bottom: 25px;
+}
+
+.container-0,
+.container-1,
+#doc-body div.default,
+#calendar.default,
+#doc-body .default-light,
+#doc-body .default-dark {
+	border: 0;
+	background-color: #fff;
+	position: relative;
+	padding: 0;
+	/*z-index:1000000000;*/
+}
+
+.doc-layout-4 .container-0 .thm-box {
+	background: transparent;
+}
+
+.thm-box {
+	border: 0;
+	position: relative;
+	/*z-index:2000000000;*/
+}
+
+/*turn off corners*/
+#ymgl-masthead .cb,
+#ymgl-masthead .cb .cl {
+	visibility: hidden;
+}
+
+.profile .ct .cl {
+	display: none;
+}
+
+.profile .ct,
+.profile .cb,
+.profile .cl,
+.doc-layout-4 .ct,
+.doc-layout-4 .cb,
+.doc-layout-4 .cl {
+	display: none;
+}
+
+.doc-layout-5 .ct,
+.doc-layout-5 .cb,
+#doc-body .doc-layout-1 .ct,
+#doc-body .doc-layout-1 .cb {
+	visibility: hidden;
+}
+
+#doc-body .doc-layout-2 .ct,
+#doc-body .doc-layout-2 .cb,
+#doc-body .tip .ct,
+#doc-body .tip .cb,
+#doc-body .default .ct,
+#doc-body .default .cb,
+#calendar .ct,
+#calendar .cb {
+	visibility: hidden;
+}
+
+#ymgl-blog-promo .ct,
+#ymgl-blog-promo .ct .cl,
+#ymgl-blog-promo .cb,
+#ymgl-blog-promo .cb .cl {
+	display: block;
+	background: transparent;
+	height: 7px;
+}
+
+/*pagination*/
+#doc-body .pagination {
+	*width: 100%;
+	padding-left: 6px;
+	padding-right: 6px;
+	position: relative;
+	/*z-index:2000000000;*/
+}
+
+#doc-body .top {
+	min-height: 16px;
+	margin-bottom: -16px;
+	*margin-bottom: -14px;
+	padding-top: 2px;
+}
+
+#doc-body .bottom {
+	bottom: 20px;
+}
+
+/*pagination - component spacing details*/
+#doc-body #ymgl-blog .thm-box,
+#doc-body #ymgl-local-reviews .thm-box,
+#doc-body #ymgl-friends .thm-box,
+#doc-body #ymgl-guestbook .thm-box {
+	padding-bottom: 25px;
+	*padding-top: 19px;
+}
+
+#doc-body #ymgl-friends.intro .thm-box,
+#doc-body #ymgl-guestbook.intro .thm-box {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+#doc-body #ymgl-blog,
+#doc-body #ymgl-friends,
+#doc-body #ymgl-local-reviews,
+#doc-body #ymgl-guestbook {
+	margin-top: -14px;
+	*margin-top: 0;
+}
+
+#doc-body #ymgl-blog.post {
+	margin-top: 0;
+}
+
+#doc-body #ymgl-blog.post .thm-box {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#doc-body #ymgl-friends.intro,
+#doc-body #ymgl-guestbook.intro {
+	margin-top: 0;
+}
+
+/*dropshadow*/
+.shadow {
+	display: block;
+	visibility: visible;
+}
+
+.doc-layout-4 .container-0 .shadow {
+	*width: 180px;
+}
+
+/* *PUBLISH CONTAINERS* */
+#doc-body .publish {
+	margin-top: 0;
+}
+
+/*spacing minutiae*/
+.doc-layout-5 .publish .head h3 {
+	margin-left: 0;
+	position: relative;
+	left: 13px;
+}
+
+.doc-layout-4 .container-0 {
+	padding: 6px;
+}
+
+.doc-layout-4 .container-0 .thm-box {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7d9e55;
+}
+
+.doc-layout-4 #ymgl-photos .head h3,
+.doc-layout-4 #ymgl-friends .head h3,
+.doc-layout-4 #ymgl-groups .head h3 {
+	margin-left: 5px;
+	*margin-left: 3px;
+}
+
+/*profile*/
+.profile {
+	z-index: 0;
+}
+
+.profile .thm-box {
+	padding-bottom: 6px;
+}
+
+.profile .head h2 {
+	border: 0;
+	padding-top: 7px;
+	padding-left: 10px;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.profile .head p {
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-bottom: 5px;
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-color: #2181a3;
+}
+
+.profile .body .user-card-shadow {
+	border: 0;
+	margin: 0;
+	background: transparent;
+}
+
+.profile .body .user-card-shadow .user-card {
+	margin: 0 auto 7px auto;
+	*margin: 0 5px 7px 5px;
+	top: 0;
+	border: 0;
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-color: #2181a3;
+	background: transparent;
+	width: 195px;
+	*width: auto;
+}
+
+.profile .body .user-card-shadow .user-card .image-wrapper {
+	margin: 5px auto;
+}
+
+.profile .body .user-card-shadow .user-card .thumb-wrapper {
+	position: relative;
+	padding-left: 2px;
+}
+
+.profile .body .user-card-shadow .user-card .thumb-wrapper img {
+}
+
+.profile .body .action-shadow {
+	border: 0;
+	background: transparent;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.profile .body .action-menu {
+	background: transparent;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.profile .body .action-menu ul {
+	background: transparent;
+}
+
+.profile .body .action-menu .ct,
+.profile .body .action-menu .cb,
+.profile .body .action-menu .ct .cl,
+.profile .body .action-menu .cb .cl {
+	display: block;
+	visibility: visible;
+	background: transparent;
+}
+
+.profile .foot {
+	margin: 5px 5px 0 5px;
+	padding-bottom: 10px;
+	padding-top: 12px;
+	border: 0;
+	border-top-width: 1px;
+	border-bottom-width: 6px;
+	border-style: solid;
+	border-color: #2181a3;
+}
+
+/*end profile*/
+
+/* blog promo */
+#doc-body #ymgl-blog-promo h3 {
+	font-weight: normal;
+}
+
+/*blogroll & sticky-posts*/
+#doc-body .my-links .thm-box {
+	padding: 5px;
+}
+
+/*profile detail*/
+#ymgl-profile-detail .head {
+	margin-top: 0;
+}
+
+#ymgl-profile-detail.publish .head {
+	background: transparent;
+	margin: 0 0 12px 0;
+	position: relative;
+	top: 8px;
+	right: 0;
+	left: 0;
+	padding: 0;
+}
+
+#ymgl-profile-detail.publish .head h3 {
+	margin: 0;
+	font-size: 118%;
+	font-weight: normal;
+}
+
+#ymgl-profile-detail.publish dl {
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-color: #e7eff7;
+	margin: 0 5px 2px 5px;
+	padding: 0 9px;
+}
+
+/* blog calendar */
+#doc-body #ymgl-blog-calendar {
+	background: transparent;
+}
+
+#doc-body #ymgl-blog-calendar iframe {
+	height: 214px;
+}
+
+#doc-body.doc-iframe-body {
+	padding: 0;
+	margin: 1px 0 0 0;
+	*margin: 0;
+	min-height: 0;
+}
+
+#doc-body.doc-iframe-body #calendar {
+	width: auto;
+}
+
+#doc-body.doc-iframe-body #calendar td {
+	width: 29px;
+}
+
+/* blogroll/sticky-posts spacing */
+#doc-body .my-links h4 {
+	margin: 2px 5px 5px 5px;
+}
+
+#doc-body .my-links ul {
+	margin: 0 5px 5px 5px;
+}
+
+/* yphotos */
+#doc-body #ymgl-photos .body {
+	margin: 0 5px;
+}
+
+/* friends */
+#doc-body #ymgl-friends .body ul.column-1,
+#doc-body #ymgl-groups .body ul.column-1 {
+	width: 75px;
+	margin: 0 0 0 4px;
+	*margin: 0 0 0 4px;
+}
+
+#doc-body #ymgl-friends .body ul.column-2,
+#doc-body #ymgl-groups .body ul.column-2 {
+	margin: 0;
+}
+
+/* set testimonial text color*/
+#doc-body .doc-layout-2 .testimonial-shadow .testimonial {
+	color: #404040;
+}
+
+#doc-body .doc-layout-2 .testimonial-shadow .testimonial .datestamp {
+	color: #999;
+}
+
+/*blog page*/
+#doc-body #ymgl-blog .head {
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-color: #7d9e55;
+}
+
+#doc-body #ymgl-blog .comments {
+	background: transparent;
+}
+
+#doc-body #ymgl-blog .comments .head {
+	border: 0;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+#ymgl-comment-add .body {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/*local reviews*/
+#doc-body #ymgl-local-reviews .head {
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-color: #7d9e55;
+}
+
+/*EMOTIBLAST*/
+/*spoken, whisper, question, quote*/
+#ymgl-blast {
+	min-height: 60px;
+	width: 93%;
+	*width: 93%;
+	left: 18px;
+	margin-right: 18px;
+	border: 0;
+}
+
+#ymgl-blast .thm-box {
+	min-height: 59px;
+}
+
+#doc-body #ymgl-blast,
+#doc-body #ymgl-blast .thm-box,
+#doc-body #ymgl-blast.whisper .thm-box {
+	background-color: #e6ecf2;
+}
+
+#doc-body #ymgl-blast.whisper {
+	background: transparent;
+}
+
+#ymgl-blast.edit:after {
+	content: '.';
+	display: block;
+	font-size: 0px;
+	line-height: 0px;
+	height: 1px;
+	clear: both;
+	visibility: hidden;
+}
+
+#doc-body #ymgl-blast p {
+	float: none;
+	margin: 0;
+	position: relative;
+	z-index: 5000000;
+	*left: 0;
+	background: transparent;
+}
+
+#doc-body #ymgl-blast .form-wrapper,
+#doc-body #ymgl-blast textarea {
+	margin: 0;
+}
+
+#doc-body #ymgl-blast .wrapper {
+	margin-right: -18px;
+}
+
+#doc-body #ymgl-blast .ct,
+#doc-body #ymgl-blast .ct .cl {
+	display: block;
+	visibility: visible;
+	height: 60px;
+}
+
+#doc-body #ymgl-blast .cb,
+#doc-body #ymgl-blast .cb .cl {
+	display: none;
+}
+
+#doc-body #ymgl-blast .ct {
+	background-position: 100% 0;
+	margin-bottom: -55px;
+	right: -18px;
+	top: 0;
+}
+
+#doc-body #ymgl-blast .ct .cl {
+	background-position: 0 -60px;
+	width: 18px;
+	left: -36px;
+	height: 60px;
+}
+
+#doc-body #ymgl-blast .tail {
+	left: -48px;
+	height: 17px;
+	width: 31px;
+	*margin-right: -31px;
+}
+
+/*thought*/
+#doc-body #ymgl-blast.thought {
+	width: 91%;
+	*width: 94%;
+	left: 26px;
+	margin-right: 26px;
+	border: 0;
+}
+
+#doc-body #ymgl-blast.thought .ct,
+#doc-body #ymgl-blast.thought .ct .cl {
+	height: 60px;
+}
+
+#doc-body #ymgl-blast.thought .ct {
+	background-position: 100% 0;
+	margin-bottom: -55px;
+	right: -26px;
+	top: 0;
+}
+
+#doc-body #ymgl-blast.thought .ct .cl {
+	background-position: 0 -60px;
+	width: 26px;
+	left: -52px;
+	height: 60px;
+}
+
+#doc-body #ymgl-blast.thought p {
+	float: none;
+	margin: 0;
+	position: relative;
+	z-index: 5000000;
+	*left: 0;
+}
+
+#doc-body #ymgl-blast.thought .tail {
+	left: -51px;
+	height: 24px;
+	width: 33px;
+	margin-top: 2px;
+	*margin-top: 0;
+}
+
+/*whisper*/
+#doc-body .doc-layout-2 .whisper {
+	*margin-right: 0;
+	filter: alpha(opacity=65);
+	-moz-opacity: 0.65;
+	opacity: 0.65;
+	*padding-left: 20px;
+	*left: -28px;
+}
+
+#doc-body .doc-layout-2 .whisper .thm-box {
+	*width: 100%;
+	*margin-left: 28px;
+	*margin-right: 18px;
+	min-height: 60px;
+	position: relative;
+	z-index: 5000000;
+}
+
+/*question*/
+#doc-body #ymgl-blast.question {
+	width: 90%;
+	margin-right: 26px;
+}
+
+#doc-body #ymgl-blast.question p {
+	float: none;
+	background: transparent;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#doc-body #ymgl-blast.question .ct {
+	right: -26px;
+}
+
+#doc-body #ymgl-blast.question .ct .cl {
+	left: -43px;
+}
+
+/*quote*/
+#doc-body #ymgl-blast.quote {
+	width: 90%;
+	margin-right: 26px;
+	left: 26px;
+}
+
+#doc-body #ymgl-blast.quote p {
+	float: none;
+	background: transparent;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#doc-body #ymgl-blast.quote .ct,
+#doc-body #ymgl-blast.quote .ct .cl {
+}
+
+#doc-body #ymgl-blast.quote .ct {
+	right: -26px;
+}
+
+#doc-body #ymgl-blast.quote .ct .cl {
+	left: -52px;
+	width: 26px;
+}
+
+#doc-body #ymgl-blast.quote .tail {
+	left: -52px;
+}
+
+/*sell*/
+#doc-body .doc-layout-2 .sale {
+	margin-top: -10px;
+	*margin-top: 0;
+	margin-right: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+#doc-body #ymgl-blast.sale p {
+	margin: 7px 7px 0 0;
+}
+
+#doc-body #ymgl-blast.sale .ct,
+#doc-body #ymgl-blast.sale .ct .cl {
+	display: none;
+}
+
+#doc-body #ymgl-blast.sale .tail {
+	top: 0;
+	margin-top: 0;
+	width: 25px;
+	height: 60px;
+	left: -25px;
+}
+
+/*shout*/
+#doc-body .doc-layout-2 .shout {
+	width: 92%;
+}
+
+#doc-body #ymgl-blast.shout .ct,
+#doc-body #ymgl-blast.shout .ct .cl {
+}
+
+#doc-body #ymgl-blast.shout .ct {
+	right: -26px;
+}
+
+#doc-body #ymgl-blast.shout .ct .cl {
+	width: 42px;
+	left: -68px;
+}
+
+#doc-body #ymgl-blast.shout .tail {
+	display: none;
+	visiblity: hidden;
+}
+
+/*BEGIN blast images*/
+#doc-body #ymgl-blast .ct,
+#doc-body #ymgl-blast .ct .cl {
+	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blast_cr.gif);
+}
+
+#doc-body #ymgl-blast .tail {
+	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blast_tail.gif);
+}
+
+/*shout*/
+#doc-body #ymgl-blast.shout .ct,
+#doc-body #ymgl-blast.shout .ct .cl {
+	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blsh_cr.gif);
+}
+
+/*thought*/
+#doc-body #ymgl-blast.thought .ct,
+#doc-body #ymgl-blast.thought .ct .cl {
+	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blth_cr.gif);
+}
+
+#doc-body #ymgl-blast.thought .tail {
+	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blth_tail.gif);
+}
+
+/*quote*/
+#doc-body #ymgl-blast.quote .ct,
+#doc-body #ymgl-blast.quote .ct .cl {
+	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blqo_cr.gif);
+}
+
+/*question*/
+#doc-body #ymgl-blast.question .ct,
+#doc-body #ymgl-blast.question .ct .cl {
+	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blqu_cr.gif);
+}
+
+/*sale*/
+#doc-body #ymgl-blast.sale .tail {
+	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blsa_tail.gif);
+}
+/*END blast images*/
+
+/*my page*/
+/* my page head*/
+#doc-head.my-page {
+	margin-bottom: 10px;
+}
+
+#doc-head.my-page #ymgl-masthead {
+	margin-bottom: 10px;
+	border: 1px solid #bababa;
+	background-color: #f4f4f4;
+}
+
+#doc-head.my-page a:link,
+#doc-head.my-page a:visited,
+#doc-head.my-page #ymgl-masthead .body a:link,
+#doc-head.my-page #ymgl-masthead .body a:visited,
+#doc-foot.mypage a:link,
+#doc-foot.my-page a:visited,
+#doc-head #ymgl-welcome-banner a:link,
+#doc-head #ymgl-welcome-banner a:visited {
+	color: #247cd4;
+}
+
+#doc-head.my-page #ymgl-masthead .ct,
+#doc-head.my-page #ymgl-masthead .cb,
+#doc-head.my-page #ymgl-masthead .cl {
+	display: block;
+	visibility: visible;
+}
+
+#doc-head.my-page #ymgl-masthead .body {
+	margin-right: 5px;
+	right: 0;
+}
+
+/* my page body */
+#doc-body.my-page {
+	margin-top: 10px;
+	margin-bottom: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#doc-body.my-page .edit .head {
+	top: 0;
+}
+
+#doc-body.my-page .edit .head span {
+	color: #404040;
+}
+
+#doc-body.my-page .edit h3 {
+	padding-left: 0;
+	background: transparent;
+}
+
+#doc-body.my-page .doc-layout-5 .edit .head,
+#doc-body.my-page .doc-layout-5 .empty .thm-box,
+#doc-body.my-page .doc-layout-4 .empty {
+	border: 1px solid #ccc;
+}
+
+#doc-body.my-page .doc-layout-4 .empty .thm-box {
+	border: 0;
+}
+
+#doc-body.my-page .doc-layout-4 .empty .thm-box .head {
+	margin-top: 0;
+}
+
+#doc-body.my-page .doc-layout-5 .empty .thm-box .head {
+	border: 0;
+}
+
+#doc-body.my-page .edit .head h3,
+#doc-body.my-page #ymgl-profile-detail.edit h3,
+#doc-body.my-page .edit h3,
+#doc-body.my-page .empty .body li {
+	color: #999;
+}
+
+#doc-body.my-page .edit .head span a:link,
+#doc-body.my-page .edit .head span a:visited,
+#doc-body.my-page .empty a:link,
+#doc-body.my-page .empty a:visited {
+	color: #247cd4;
+}
+
+#doc-body.my-page div.empty .body p {
+	color: #404040;
+}
+
+#doc-body.my-page .profile .edit {
+	color: #404040;
+}
+
+#doc-body.my-page #ymgl-profile .edit a:link,
+#doc-body.my-page #ymgl-profile .edit a:visited {
+	color: #247cd4;
+}
+
+#doc-body.my-page div.empty .thm-box {
+	background: #fff;
+}
+
+#doc-body.my-page .doc-layout-2 .doc-layout-4 .edit .head {
+	position: relative;
+	top: 3px;
+}
+
+#doc-body.my-page .doc-layout-4 .empty {
+	padding: 0;
+}
+
+#doc-body.my-page .doc-layout-4 .empty .thm-box {
+	margin: 0;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+#doc-body.my-page .doc-layout-4 .empty .body {
+	margin: 0;
+}
+
+#doc-body.my-page span.edit .ct,
+#doc-body.my-page span.edit .cl,
+#doc-body.my-page span.edit .cb {
+	display: block;
+	visibility: hidden;
+	background: transparent;
+	height: 3px;
+}
+
+/*my page blast*/
+#doc-body.my-page #ymgl-blast .empty a:link,
+#doc-body.my-page #ymgl-blast .empty a:visited {
+	color: #247cd4;
+}
+
+#doc-body.my-page #ymgl-blast .edit-link {
+	right: 0px;
+}
+
+#doc-body.my-page #ymgl-blast.sale .edit-link {
+	right: 18px;
+}
+
+/*my page profile-detail*/
+#doc-body.my-page #ymgl-profile-detail.edit .head {
+	margin-top: 0;
+	top: 0;
+}
+
+#doc-body.my-page #ymgl-profile-detail.edit .ct {
+	display: none;
+}
+
+#doc-body.my-page #ymgl-friends.edit .body ul.column-1,
+#doc-body.my-page #ymgl-groups.edit .body ul.column-1 {
+	margin: 0 0 0 10px;
+	*margin: 0 0 0 5px;
+}
+
+#doc-body.my-page #ymgl-friends.edit .body ul.column-2,
+#doc-body.my-page #ymgl-groups.edit .body ul.column-2 {
+	margin: 0;
+}
+/*
+     FILE ARCHIVED ON 08:53:49 Apr 09, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:05:19 May 22, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 328.72 (3)
+  esindex: 0.005
+  captures_list: 349.593
+  CDXLines.iter: 11.223 (3)
+  PetaboxLoader3.datanode: 512.645 (4)
+  exclusion.robots: 0.159
+  exclusion.robots.policy: 0.149
+  RedisCDXSource: 3.563
+  PetaboxLoader3.resolve: 371.646
+  load_resource: 567.588
+*/

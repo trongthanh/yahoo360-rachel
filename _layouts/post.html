@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<!-- Post Content -->
+<article class="container-1 publish intro ">
+	<span class="shadow"></span>
+	<div class="thm-box">
+		<span class="ct"><span class="cl"></span></span>
+
+		<div class="head">
+			<h3>Blog</h3>
+			<span class="datestamp">Sun Apr 05 11:13am ICT</span>
+		</div>
+
+		<div class="body">
+			<!-- Begin post content -->
+			{{ content }}
+			<!-- End post content -->
+		</div>
+
+		<ul class="pager">
+			{% if page.previous.url %}
+			<li class="previous">
+				<a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+			</li>
+			{% endif %}
+			{% if page.next.url %}
+			<li class="next">
+				<a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+			</li>
+			{% endif %}
+		</ul>
+		<span class="cb"><span class="cl"></span></span>
+	</div>
+</article>

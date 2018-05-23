@@ -1,0 +1,38 @@
+---
+layout: blog
+---
+
+<div class="container-1 publish intro ">
+	<span class="shadow"></span>
+	<div class="thm-box">
+		<span class="ct"><span class="cl"></span></span>
+
+		<div class="head">
+			<h3>Blog</h3>
+			<span class="datestamp">Sun Apr 05 11:13am ICT</span>
+		</div>
+
+		<div class="body">
+			{% for post in paginator.posts %}
+			<div class="post-preview">
+				<a href="{{ post.url | prepend: site.baseurl }}">
+					<h2 class="post-title">
+						{{ post.title }}
+					</h2>
+					{% if post.subtitle %}
+					<h3 class="post-subtitle">
+						{{ post.subtitle }}
+					</h3>
+					{% endif %}
+				</a>
+				<p class="post-meta">
+					<span>Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}.</span>
+				</p>
+			</div>
+			<hr>
+			{% endfor %}
+		</div>
+		<span class="cb"><span class="cl"></span></span>
+	</div>
+</div>
+
