@@ -1,35 +1,70 @@
 ---
 layout: default
+left_widget: calendar.html
 ---
-<!-- Post Content -->
-<article class="container-1 publish intro ">
-	<span class="shadow"></span>
-	<div class="thm-box">
-		<span class="ct"><span class="cl"></span></span>
+<div id="ymgl-blog" class="container-0 publish post">
+    <span class="shadow"></span>
+    <div class="thm-box">
+        <span class="ct"><span class="cl"></span></span>
+        <dl class="body">
+            <dt class="post-head">{{ page.title }}</dt>
+            <dd class="post-body last">
+                <div class="image-wrapper"> </div>
+                <div class="content-wrapper">
+					<!-- Begin post content -->
+					{{ content }}
+					<!-- End post content -->
+                </div>
+                <div class="foot">
+                    <span><span style="display:inline" id="tag-container-58"><a href="javascript:;" rel="nofollow tag"></a></span></span>
+                    <form>
+                        <input type="hidden" name="tagslist" value="" id="tag-list-58">
+                    </form>
+                    <div class="alert" style="display:none" id="tag-error-58"></div>
 
-		<div class="head">
-			<h3>Blog</h3>
-			<span class="datestamp">Sun Apr 05 11:13am ICT</span>
-		</div>
+                    <p>{{ post.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }} </p>
+                    <p class="nav">
+                    	{% if page.next.url %}
+                        <span>Next Post: <a href="{{ page.next.url | relative_url }}">{{page.previous.title}}</a></span>
+						{% endif %}
+                    	{% if page.previous.url %}
+                        <span>Previous Post: <a href="{{ page.previous.url | relative_url }}">{{page.previous.title}}</a></span>
+                        {% endif %}
+                    </p>
+                </div>
+            </dd>
+        </dl>
 
-		<div class="body">
-			<!-- Begin post content -->
-			{{ content }}
-			<!-- End post content -->
-		</div>
+		{% assign comments = site.data.comments[page.url] %}
+        <div class="comments" id="comments">
+            <div class="head">
+                <h4>Comments</h4><em>({{comments.size }} total)</em> </div>
+            <span class="pagination top"></span>
 
-		<ul class="pager">
-			{% if page.previous.url %}
-			<li class="previous">
-				<a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-			</li>
-			{% endif %}
-			{% if page.next.url %}
-			<li class="next">
-				<a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-			</li>
-			{% endif %}
-		</ul>
-		<span class="cb"><span class="cl"></span></span>
-	</div>
-</article>
+			{% for comment in comments %}
+            <div class="row">
+                <div class="user-card ">
+                    <div class="user-photo ">
+                        <a href="" title="{{ comment.author }}"><img src="{{ '/assets/anonymous.png' | relative_url }}" width="64" border="0"></a>
+                    </div>
+                    <ul class="vitals">
+                        <li class="user-name"><a href="" title="{{ comment.author }}">{{ comment.author }}</a></li>
+                        <li class="opi"><img src="{{ '/assets/offline_12px_1.gif' | relative_url }}" height="12" width="12" border="0"> Offline </li>
+                    </ul>
+                </div>
+                <div class="wrapper">
+                    <p class="comment">{{ comment.content }}</p>
+                    <p class="datestamp">
+                    	{{ comment.time | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- add .last to .row -->
+
+            <span class="pagination bottom"></span>
+        </div>
+
+        <span class="cb"><span class="cl"></span></span>
+    </div>
+</div>
