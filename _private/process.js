@@ -50,7 +50,7 @@ posts.forEach((post, index) => {
 	});
 
 	// process comments
-	console.log('comments', post.comments);
+	// console.log('comments', post.comments);
 	const postComments = post.comments.map(comment => {
 		const author = /author: ?(.*)/.exec(comment)[1];
 		const content = /body:\n([\s\S]*)/.exec(comment)[1];
