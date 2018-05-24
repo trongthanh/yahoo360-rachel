@@ -2,76 +2,85 @@
 layout: default
 left_widget: calendar.html
 ---
+<span class="pagination top">
+{% if page.previous.url %}
+	<span><a href="{{ page.previous.url | relative_url }}" title="{{page.previous.title}}">Previous Post</a></span>
+	{% if page.next.url %} | {% endif %}
+{% endif %}
+{% if page.next.url %}
+	<span><a href="{{ page.next.url | relative_url }}" title="{{page.next.title}}">Next Post</a></span>
+{% endif %}
+</span>
 <div id="ymgl-blog" class="container-0 publish post">
-    <span class="shadow"></span>
-    <div class="thm-box">
-        <span class="ct"><span class="cl"></span></span>
-        <dl class="body">
-            <dt class="post-head">{{ page.title }}</dt>
-            <dd class="post-body last">
-                <div class="image-wrapper">
-            	{% if page.image %}
-            	{% if page.imagehr %}
-            		<a href="{{ page.imagehr | relative_url }}" target="blank"><img src="{{ page.image | relative_url }}" alt="{{page.title}}"></a>
-            	{% else %}
+	<span class="shadow"></span>
+	<div class="thm-box">
+		<span class="ct"><span class="cl"></span></span>
+		<dl class="body">
+			<dt class="post-head">{{ page.title }}</dt>
+			<dd class="post-body last">
+				<div class="image-wrapper">
+				{% if page.image %}
+				{% if page.imagehr %}
+					<a href="{{ page.imagehr | relative_url }}" target="blank"><img src="{{ page.image | relative_url }}" alt="{{page.title}}"></a>
+				{% else %}
 					<img src="{{ page.image | relative_url }}" alt="{{page.title}}">
 				{% endif %}
 				{% endif %}
-                </div>
-                <div class="content-wrapper">
+				</div>
+				<div class="content-wrapper">
 					<!-- Begin post content -->
 					{{ content }}
 					<!-- End post content -->
-                </div>
-                <div class="foot">
-                    <span><span style="display:inline" id="tag-container-58"><a href="javascript:;" rel="nofollow tag"></a></span></span>
-                    <form>
-                        <input type="hidden" name="tagslist" value="" id="tag-list-58">
-                    </form>
-                    <div class="alert" style="display:none" id="tag-error-58"></div>
+				</div>
+				<div class="foot">
+					<span><span style="display:inline" id="tag-container-58"><a href="javascript:;" rel="nofollow tag"></a></span></span>
+					<form>
+						<input type="hidden" name="tagslist" value="" id="tag-list-58">
+					</form>
+					<div class="alert" style="display:none" id="tag-error-58"></div>
 
-                    <p>{{ page.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }} </p>
-                    <p class="nav">
-                    	{% if page.next.url %}
-                        <span>Next Post: <a href="{{ page.next.url | relative_url }}">{{page.next.title}}</a></span>
+					<p>{{ page.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }} </p>
+					<p class="nav">
+						{% if page.next.url %}
+						<span>Next Post: <a href="{{ page.next.url | relative_url }}">{{page.next.title}}</a></span>
 						{% endif %}
-                    	{% if page.previous.url %}
-                        <span>Previous Post: <a href="{{ page.previous.url | relative_url }}">{{page.previous.title}}</a></span>
-                        {% endif %}
-                    </p>
-                </div>
-            </dd>
-        </dl>
+						{% if page.previous.url %}
+						<span>Previous Post: <a href="{{ page.previous.url | relative_url }}">{{page.previous.title}}</a></span>
+						{% endif %}
+					</p>
+				</div>
+			</dd>
+		</dl>
 
 		{% assign comments = site.data.comments[page.url] %}
-        <div class="comments" id="comments">
-            <div class="head">
-                <h4>Comments</h4><em>({{comments.size }} total)</em> </div>
-            <!-- not aplicable: <span class="pagination top"></span> -->
+		<div class="comments" id="comments">
+			<div class="head">
+				<h4>Comments</h4><em>({{comments.size }} total)</em> </div>
+			<!-- not aplicable: <span class="pagination top"></span> -->
 
 			{% for comment in comments %}
-            <div class="row">
-                <div class="user-card ">
-                    <div class="user-photo ">
-                        <a href="" title="{{ comment.author }}"><img src="{{ '/assets/anonymous.png' | relative_url }}" width="64" border="0"></a>
-                    </div>
-                    <ul class="vitals">
-                        <li class="user-name"><a href="" title="{{ comment.author }}">{{ comment.author }}</a></li>
-                        <li class="opi"><img src="{{ '/assets/offline_12px_1.gif' | relative_url }}" height="12" width="12" border="0"> Offline </li>
-                    </ul>
-                </div>
-                <div class="wrapper">
-                    <p class="comment">{{ comment.content }}</p>
-                    <p class="datestamp">
-                    	{{ comment.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }}
-                    </p>
-                </div>
-            </div>
-            {% endfor %}
+			<div class="row">
+				<div class="user-card ">
+					<div class="user-photo ">
+						<a href="" title="{{ comment.author }}"><img src="{{ '/assets/anonymous.png' | relative_url }}" width="64" border="0"></a>
+					</div>
+					<ul class="vitals">
+						<li class="user-name"><a href="" title="{{ comment.author }}">{{ comment.author }}</a></li>
+						<li class="opi"><img src="{{ '/assets/offline_12px_1.gif' | relative_url }}" height="12" width="12" border="0"> Offline </li>
+					</ul>
+				</div>
+				<div class="wrapper">
+					<p class="comment">{{ comment.content }}</p>
+					<p class="datestamp">
+						{{ comment.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }}
+					</p>
+				</div>
+			</div>
+			{% endfor %}
 
-            <!-- not aplicable: <span class="pagination bottom"></span> -->
-        </div>
+			<!-- not aplicable: <span class="pagination bottom"></span> -->
+		</div>
 
-        <span class="cb"><span class="cl"></span></span>
-    </div>
+		<span class="cb"><span class="cl"></span></span>
+	</div>
 </div>
