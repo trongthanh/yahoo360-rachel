@@ -10,9 +10,13 @@ left_widget: calendar.html
             <dt class="post-head">{{ page.title }}</dt>
             <dd class="post-body last">
                 <div class="image-wrapper">
-                	{% if page.image %}
+            	{% if page.image %}
+            	{% if page.imagehr %}
+            		<a href="{{ page.imagehr | relative_url }}" target="blank"><img src="{{ page.image | relative_url }}" alt="{{page.title}}"></a>
+            	{% else %}
 					<img src="{{ page.image | relative_url }}" alt="{{page.title}}">
-					{% endif %}
+				{% endif %}
+				{% endif %}
                 </div>
                 <div class="content-wrapper">
 					<!-- Begin post content -->
@@ -26,7 +30,7 @@ left_widget: calendar.html
                     </form>
                     <div class="alert" style="display:none" id="tag-error-58"></div>
 
-                    <p>{{ post.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }} </p>
+                    <p>{{ page.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }} </p>
                     <p class="nav">
                     	{% if page.next.url %}
                         <span>Next Post: <a href="{{ page.next.url | relative_url }}">{{page.next.title}}</a></span>
@@ -43,7 +47,7 @@ left_widget: calendar.html
         <div class="comments" id="comments">
             <div class="head">
                 <h4>Comments</h4><em>({{comments.size }} total)</em> </div>
-            <span class="pagination top"></span>
+            <!-- not aplicable: <span class="pagination top"></span> -->
 
 			{% for comment in comments %}
             <div class="row">
@@ -64,9 +68,8 @@ left_widget: calendar.html
                 </div>
             </div>
             {% endfor %}
-            <!-- add .last to .row -->
 
-            <span class="pagination bottom"></span>
+            <!-- not aplicable: <span class="pagination bottom"></span> -->
         </div>
 
         <span class="cb"><span class="cl"></span></span>

@@ -1529,6 +1529,10 @@ playback timings (ms):
 	border-bottom: 1px solid #d4d4d4;
 }
 
+#ymgl-blog .comments .row:last-child {
+	border-bottom: 0;
+}
+
 #ymgl-blog .comments .row .user-card {
 	clear: right;
 	float: left;

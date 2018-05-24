@@ -21,7 +21,7 @@ kramdown:
   input: GFM
 highlighter: rouge
 permalink: /blog/:year-:month-:day-:title.html
-paginate: 25
+paginate: 10
 paginate_path: "/blog/page:num/"
 exclude: ["README.md", "css/**/*", "_private"]
 keep_files: ["flash", "javascript"]

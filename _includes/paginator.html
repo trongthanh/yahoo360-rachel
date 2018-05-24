@@ -1,0 +1,19 @@
+<span class="pagination {{ include.position }}">
+	<span><em>{{ paginator.page | minus: 1 | times: paginator.per_page | plus: 1 }}
+	-
+	{{ paginator.page | minus: 1 | times: paginator.per_page | plus: paginator.posts.size }}</em>
+	of
+	<em class="limit">{{ paginator.total_posts }}</em>
+	{% if paginator.previous_page %}
+	<a href="{{ '/blog/' | relative_url }}">First</a> | &lt; <a href="{{ paginator.previous_page_path | relative_url }}">Prev</a>
+	{% else %}
+	First | Prev
+	{% endif %}
+	|
+	{% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path | relative_url }}">Next &gt;</a> | <a href="{{ paginator.total_pages | prepend: 'blog/page' | relative_url }}">Last</a>
+	{% else %}
+	Next | Last
+	{% endif %}
+	</span>
+</span>

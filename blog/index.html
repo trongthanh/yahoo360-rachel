@@ -4,32 +4,27 @@ title: Yahoo! 360° - Rachel's Blog
 left_widget: calendar.html
 ---
 
-<span class="pagination top">
-
-<span><em>1 - 5</em> of <em class="limit">25</em> First | &lt; Prev | <a href="" id="num_next">Next &gt;</a> | <a href="" id="num_last">Last</a></span>
-</span>
+{% include paginator.html position='top' %}
 <div id="ymgl-blog" class="container-0 publish">
     <span class="shadow"></span>
     <div class="thm-box">
         <span class="ct"><span class="cl"></span></span>
 
         <div class="head">
-            <h3>Rachel's Blog <span class="view-toggle">Full Post View | <a href="javascript:;">List View</a></span></h3>
+            <h3>Rachel's Blog <span class="view-toggle"><a href="javascript:;">Full Post View</a> | List View</span></h3>
             <p class="footnote"></p>
         </div>
 
         <dl class="body">
 		{% for post in paginator.posts %}
-            <dt class="post-head">{{ post.title }}</dt>
+            <dt class="post-head"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></dt>
             <dd class="post-body ">
-
                 <div class="image-wrapper">
-
+					<!-- The top post image should be here, but now they are embeded in posts and it's ok -->
                 </div>
                 <div class="content-wrapper">
-                	{{ post.content | strip_html | truncatewords: 30 }}
+                	{{ post.content | strip_html | truncatewords: 50 }}
                 </div>
-
                 <div class="foot">
                     <span><span style="display:inline" id="tag-container-62"><a href="" rel="nofollow tag"></a></span></span>
                     <form>
@@ -39,7 +34,8 @@ left_widget: calendar.html
 
                     <span>
                     	{{ post.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }}
-                    	<a href="{{ post.url | relative_url }}">Permanent Link</a> | <a href="{{ post.url | relative_url }}#comments">1 Comment</a></span>
+                    	{% assign comments = site.data.comments[post.url] %}
+                    	<a href="{{ post.url | relative_url }}">Permanent Link</a> | <a href="{{ post.url | relative_url }}#comments">{{comments.size }} {% if comments.size == 1 %}Comment{% else %}Comments{% endif %}</a></span>
                 </div>
             </dd>
 		{% endfor %}
@@ -54,9 +50,6 @@ left_widget: calendar.html
         <span class="cb"><span class="cl"></span></span>
     </div>
 </div>
-<span class="pagination bottom">
-
-<span><em>1 - 5</em> of <em class="limit">25</em> First | &lt; Prev | <a href="" id="num_next">Next &gt;</a> | <a href="" id="num_last">Last</a></span>
-</span>
+{% include paginator.html position='bottom' %}
 
 

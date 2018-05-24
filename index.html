@@ -15,15 +15,19 @@ left_widget: guestbook.html
 
 			<div class="head">
 				<h3>Blog</h3>
-				<span class="datestamp">Sun Apr 05 11:13am ICT</span>
+				<span class="datestamp">{{ site.posts.first.date | date: "%a %b %d, %y - %I:%M%P (%Z)" }}</span>
 			</div>
 
 			<div class="body">
-
-				<h4>Hơn một năm trôi qua...</h4>
-				<a href="https://web.archive.org/web/20090413012733/http://blog.360.yahoo.com/blog-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1"><img src="assets/anonymous.png" data-identicon="eac3" alt="Hơn một năm trôi qua..." width="85" height="64" border="0"></a>
-				<p class="snippet">Đã hơn một năm rồi Béo để blog bám mạng nhện. Mà thực ra thì gần như cái network nào cũng bám mạng nhện, Yahoo Messenger, Facebook, Email, kể cả điện thoại di động. Đợt n… <a href="https://web.archive.org/web/20090413012733/http://blog.360.yahoo.com/blog-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1">more</a></p>
-
+			{% for post in site.posts limit:5 %}
+			{% if forloop.first %}
+				<h4>{{ post.title }}</h4>
+				{% if post.image %}
+				<a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.title }}" width="85" border="0"></a>
+				{% endif %}
+				<p class="snippet">{{ post.content | strip_html | truncatewords: 35 }} <a href="{{ post.url | relative_url }}">more</a></p>
+			{% endif %}
+			{% endfor %}
 				<p class="footnote"><a href="{{ "blog/" | relative_url }}">View Blog »</a></p>
 			</div>
 			<span class="cb"><span class="cl"></span></span>
@@ -120,7 +124,7 @@ left_widget: guestbook.html
 		<div class="thm-box" id="friends-container">
 			<span class="ct"><span class="cl"></span></span>
 			<div class="head">
-				<h3>Friends</h3><span></span> <span class="friends-count">(<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/friends-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1">See all 165</a>)</span>
+				<h3>Friends</h3><span></span> <span class="friends-count">(<a href="{{ 'friends.html' | relative_url }}">See all 165</a>)</span>
 			</div>
 			<div class="body" id="friends-container">
 
@@ -313,7 +317,7 @@ left_widget: guestbook.html
 			</div>
 			<div class="foot">
 
-				<span class="footnote">(<a href="https://web.archive.org/web/20090413012733/http://360.yahoo.com/friends-8VWylvA3eqoZfG4NlXu2IrQuBg--?cq=1">See all 165 friends</a>)</span>
+				<span class="footnote">(<a href="{{ 'friends.html' | relative_url }}">See all 165 friends</a>)</span>
 			</div>
 			<span class="cb"><span class="cl"></span></span>
 		</div>
