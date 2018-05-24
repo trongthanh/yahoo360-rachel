@@ -4,5 +4,6 @@ This is a resurrection of my SO blog hosted on Yahoo! 360, recreated in Jekyll /
 
 To preview locally, install Ruby gem `bundler`, then install the `github-pages` plugins set with `bundle install` and finally execute: `bundle exec jekyll serve --incremental`.
 
+
 ---
-© 2018 Tran Trong Thanh. All rights reserved.
+© 2018 Tran Trong Thanh. All rights reserved. MIT License. Blog posts are © Rachel Nguyen.
