@@ -1569,3 +1569,7 @@ playback timings (ms):
 #ymgl-blog .comments .last {
 	border: 0;
 }
+
+#ymgl-blog .image-wrapper a {
+	cursor: zoom-in;
+}
