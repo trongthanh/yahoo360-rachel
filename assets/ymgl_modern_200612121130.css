@@ -700,44 +700,44 @@
 /*BEGIN blast images*/
 #doc-body #ymgl-blast .ct,
 #doc-body #ymgl-blast .ct .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blast_cr.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/default_blast_cr.gif);
 }
 
 #doc-body #ymgl-blast .tail {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blast_tail.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/default_blast_tail.gif);
 }
 
 /*shout*/
 #doc-body #ymgl-blast.shout .ct,
 #doc-body #ymgl-blast.shout .ct .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blsh_cr.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/default_blsh_cr.gif);
 }
 
 /*thought*/
 #doc-body #ymgl-blast.thought .ct,
 #doc-body #ymgl-blast.thought .ct .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blth_cr.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/default_blth_cr.gif);
 }
 
 #doc-body #ymgl-blast.thought .tail {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blth_tail.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/default_blth_tail.gif);
 }
 
 /*quote*/
 #doc-body #ymgl-blast.quote .ct,
 #doc-body #ymgl-blast.quote .ct .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blqo_cr.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/default_blqo_cr.gif);
 }
 
 /*question*/
 #doc-body #ymgl-blast.question .ct,
 #doc-body #ymgl-blast.question .ct .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blqu_cr.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/default_blqu_cr.gif);
 }
 
 /*sale*/
 #doc-body #ymgl-blast.sale .tail {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/thm2/default_blsa_tail.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/default_blsa_tail.gif);
 }
 /*END blast images*/
 

@@ -187,7 +187,7 @@ textarea.char-count-full {
 span.no-data,
 label.no-data {
 	display: block;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/no_photo.gif) no-repeat 0 0;
+	background: url(/yahoo360-rachel/assets/theme/no_photo.gif) no-repeat 0 0;
 	width: 64px;
 	height: 70px;
 	margin: 0;
@@ -196,7 +196,7 @@ label.no-data {
 span.anon,
 label.anon {
 	display: block;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/anon_user.gif) no-repeat 0 0;
+	background: url(/yahoo360-rachel/assets/theme/anon_user.gif) no-repeat 0 0;
 	width: 64px;
 	height: 70px;
 	margin: 0;
@@ -227,13 +227,13 @@ ul.default {
 	border: 0;
 }
 ul.default li {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ul_bullet.gif) no-repeat 0px 6px;
+	background: url(/yahoo360-rachel/assets/theme/ul_bullet.gif) no-repeat 0px 6px;
 	padding-left: 9px;
 }
 input.inactive {
 	color: #404040;
 	font-family: arial, helvetica, sans-serif;
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ab_inactive.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/ab_inactive.gif);
 	background-repeat: no-repeat;
 	background-color: #e5e5e5;
 	border: 1px solid #a6a6a6;
@@ -246,7 +246,7 @@ input.active {
 	font-family: arial, helvetica, sans-serif;
 	font-weight: bold;
 	background-color: #4384f0;
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ab_active.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/ab_active.gif);
 	background-repeat: no-repeat;
 	border: 1px solid #1e5fc7;
 	*width/**/: 60px;
@@ -547,7 +547,7 @@ doc-layout-5,
 	height: 3px;
 	position: relative;
 	text-align: left;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_blue.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/cr_blue.gif) no-repeat;
 }
 .ct,
 .cb {
@@ -580,7 +580,7 @@ doc-layout-5,
 	display: block;
 	font-size: 0;
 	line-height: 0;
-	background: transparent url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_m_lblue_ne.gif) no-repeat top right;
+	background: transparent url(/yahoo360-rachel/assets/theme/cr_m_lblue_ne.gif) no-repeat top right;
 	margin: 0;
 	height: 3px;
 	width: 100%;
@@ -592,7 +592,7 @@ doc-layout-5,
 	display: block;
 	font-size: 0;
 	line-height: 0;
-	background: transparent url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_m_lblue_nw.gif) no-repeat top left;
+	background: transparent url(/yahoo360-rachel/assets/theme/cr_m_lblue_nw.gif) no-repeat top left;
 	margin: 0;
 	height: 3px;
 	width: 3px;
@@ -604,7 +604,7 @@ doc-layout-5,
 	clear: both;
 	font-size: 0;
 	line-height: 0;
-	background: transparent url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_m_lblue_se.gif) no-repeat bottom right;
+	background: transparent url(/yahoo360-rachel/assets/theme/cr_m_lblue_se.gif) no-repeat bottom right;
 	margin: 0;
 	height: 3px;
 	width: 100%;
@@ -616,7 +616,7 @@ doc-layout-5,
 	display: block;
 	font-size: 0;
 	line-height: 0;
-	background: transparent url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_m_lblue_sw.gif) no-repeat bottom left;
+	background: transparent url(/yahoo360-rachel/assets/theme/cr_m_lblue_sw.gif) no-repeat bottom left;
 	margin: 0;
 	height: 3px;
 	width: 3px;
@@ -691,7 +691,7 @@ div.default-lgray {
 #ymgl-masthead .ct .cl,
 #ymgl-masthead .cb,
 #ymgl-masthead .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_m_gray.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_m_gray.gif);
 }
 #ymgl-masthead h1 {
 	clear: none;
@@ -699,7 +699,7 @@ div.default-lgray {
 	font-size: 130%;
 	color: #ffffff;
 	text-align: left;
-	background: #285d7d url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_b_dblue_nw.gif) no-repeat top left;
+	background: #285d7d url(/yahoo360-rachel/assets/theme/cr_b_dblue_nw.gif) no-repeat top left;
 	*width: 215px;
 	min-width: 215px;
 	margin: -4px 0 -4px -1px;
@@ -708,7 +708,7 @@ div.default-lgray {
 
 #ymgl-masthead h1 span {
 	display: block;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_b_dblue_sw.gif) no-repeat bottom left;
+	background: url(/yahoo360-rachel/assets/theme/cr_b_dblue_sw.gif) no-repeat bottom left;
 	padding: 6px 0 5px 10px;
 	margin: 0;
 	*padding-bottom: 6px;
@@ -857,7 +857,7 @@ div.default-lgray {
 .default-green .ct .cl,
 .default-green .cb,
 .default-green .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_d_green.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_d_green.gif);
 }
 
 /* preview bar in messages */
@@ -908,13 +908,13 @@ div.default-lgray {
 .default-gray .ct .cl,
 .default-gray .cb,
 .default-gray .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_d_gray.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_d_gray.gif);
 }
 .privacy-wrapper .ct,
 .privacy-wrapper .ct .cl,
 .privacy-wrapper .cb,
 .privacy-wrapper .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_l_gray.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_l_gray.gif);
 }
 
 /*privacy*/
@@ -1017,7 +1017,7 @@ div.default-lgray {
 .default-lgray .ct .cl,
 .default-lgray .cb,
 .default-lgray .ct .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_l_gray.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_l_gray.gif);
 }
 .privacy .cb {
 	margin-top: 4px;
@@ -1068,7 +1068,7 @@ div.default-lgray {
 .tip .ct .cl,
 .tip .cb,
 .tip .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_lg_green.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_lg_green.gif);
 	height: 8px;
 }
 .tip .ct .cl {
@@ -1093,7 +1093,7 @@ div.default-lgray {
 .alert-box .ct,
 .alert-box .cb,
 .alert-box .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_olive.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_olive.gif);
 	height: 7px;
 }
 
@@ -1189,7 +1189,7 @@ div.default-lgray {
 .vitality .photos .album {
 	clear: right;
 	float: left;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/album_bg.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/album_bg.gif) no-repeat;
 	margin: 0 10px 10px 0;
 	*margin: 0 10px 0 0;
 	width: 100px;
@@ -1290,7 +1290,7 @@ div.default-lgray {
 .picker .head {
 	font: 74% verdana, arial, helvetica, sans-serif;
 	padding-left: 25px;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ar_msel_down.gif) no-repeat 5px 10px;
+	background: url(/yahoo360-rachel/assets/theme/ar_msel_down.gif) no-repeat 5px 10px;
 	height: 33px;
 	*height: 3.2em;
 	margin: 0 0 -7px 0;
@@ -1306,7 +1306,7 @@ div.default-lgray {
 	min-height: 9px;
 }
 .picker .body {
-	background: #fff url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_wr_blue_white_nw.gif) no-repeat 0 0;
+	background: #fff url(/yahoo360-rachel/assets/theme/cr_wr_blue_white_nw.gif) no-repeat 0 0;
 	margin: 0 0 0 25px;
 }
 .picker .body .list-head {
@@ -1330,7 +1330,7 @@ div.default-lgray {
 .picker .body .list-foot,
 .picker .body .section-foot {
 	font: 74% verdana, arial, helvetica, sans-serif;
-	background: #fff url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_wr_blue_white_sw.gif) no-repeat 0 100%;
+	background: #fff url(/yahoo360-rachel/assets/theme/cr_wr_blue_white_sw.gif) no-repeat 0 100%;
 	border-top: 1px solid #d9d9d9;
 	min-height: 15px;
 	*height: 3px;
@@ -1356,7 +1356,7 @@ div.default-lgray {
 .picker .foot {
 	font: 74% verdana, arial, helvetica, sans-serif;
 	padding-left: 25px;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ar_msel_up.gif) no-repeat 5px 0;
+	background: url(/yahoo360-rachel/assets/theme/ar_msel_up.gif) no-repeat 5px 0;
 	height: 33px;
 	*height: 2.4em;
 	margin: -7px 0 0 0;
@@ -1399,7 +1399,7 @@ div.default-lgray {
 .publish .ct,
 .publish .cb,
 .publish .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_d_green.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_d_green.gif);
 }
 
 /*intro module on top target page */
@@ -1499,7 +1499,7 @@ div.default-lgray {
 	display: block;
 	clear: both;
 	float: left;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/tail_bb_long_tmp.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/tail_bb_long_tmp.gif) no-repeat;
 	height: 17px;
 	width: 31px;
 	position: absolute;
@@ -1510,7 +1510,7 @@ div.default-lgray {
 .blast .ct,
 .blast .cb,
 .blast .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_blast_flat.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_blast_flat.gif);
 	clear: both;
 	float: none;
 	height: 18px;
@@ -1545,7 +1545,7 @@ div.default-lgray {
 	visiblity: none;
 }
 .sale .tail {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/blast_sale_tail_flat.gif);
+	background: url(/yahoo360-rachel/assets/theme/blast_sale_tail_flat.gif);
 	height: 60px;
 	width: 38px;
 	top: 0;
@@ -1560,7 +1560,7 @@ div.default-lgray {
 .thought .ct .cl,
 .thought .cb,
 .thought .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_thought_flat.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_thought_flat.gif);
 	height: 30px;
 	margin: 0;
 }
@@ -1582,7 +1582,7 @@ div.default-lgray {
 	top: 0;
 }
 .thought .tail {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/blast_thought_tail.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/blast_thought_tail.gif);
 	height: 24px;
 	width: 33px;
 	left: -28px;
@@ -1598,7 +1598,7 @@ div.default-lgray {
 .whisper .ct,
 .whisper .cl,
 .whisper .cb {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_whisper.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_whisper.gif);
 }
 .whisper .ct {
 	right: -1px;
@@ -1611,7 +1611,7 @@ div.default-lgray {
 	left: -2px;
 }
 .whisper .tail {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/tail_whisper.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/tail_whisper.gif);
 }
 
 .quote p.content {
@@ -1621,7 +1621,7 @@ div.default-lgray {
 .quote .ct,
 .quote .cl,
 .quote .cb {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_quote.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_quote.gif);
 }
 
 .quote .ct {
@@ -1646,7 +1646,7 @@ div.default-lgray {
 }
 
 .question {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/blast_q_mark.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/blast_q_mark.gif);
 	background-repeat: no-repeat;
 	background-position: 99% 50%;
 }
@@ -1662,7 +1662,7 @@ div.default-lgray {
 }
 .shout .ct,
 .shout .ct .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_shout_trans.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_shout_trans.gif);
 	height: 60px;
 }
 .shout .cb {
@@ -1892,7 +1892,7 @@ span.edit .cb .cl {
 	color: #247cd4;
 }
 .profile .body .action-shadow .action .bullet-add {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/mingle/gr/invite_16pix.gif) no-repeat 0 0;
+	background: url(/yahoo360-rachel/assets/theme/invite_16pix.gif) no-repeat 0 0;
 	padding-left: 20px;
 	min-height: 16px;
 	*height: 16px;
@@ -1953,11 +1953,11 @@ span.edit .cb .cl {
 	margin-right: 7px;
 }
 .profile .body .action-menu li.send-message {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/mingle/gr/message_16pix.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/message_16pix.gif);
 	background-repeat: no-repeat;
 }
 .profile .body .action-menu li.launch {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/mingle/gr/listening_16pix.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/listening_16pix.gif);
 	background-repeat: no-repeat;
 }
 .profile .body .action-menu li.last {
@@ -2064,11 +2064,11 @@ span.edit .cb .cl {
 }
 
 .profile .head h2 .ct {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_fld_m_blue.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_fld_m_blue.gif);
 	margin-bottom: 1px;
 }
 .profile .head h2 .ct .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_fld_m_blue.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_fld_m_blue.gif);
 	background-position: 100% -6px;
 	left: -12px;
 }
@@ -2076,7 +2076,7 @@ span.edit .cb .cl {
 .profile .body .action-menu .ct .cl,
 .profile .body .action-menu .cb,
 .profile .body .action-menu .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_l_gray.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_l_gray.gif);
 }
 
 /*edit profile*/
@@ -2104,7 +2104,7 @@ span.edit .cb .cl {
 }
 .profile .user-card-shadow .user-card div.edit p.body {
 	text-align: center;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ghost_image.gif) no-repeat 50% 0;
+	background: url(/yahoo360-rachel/assets/theme/ghost_image.gif) no-repeat 50% 0;
 	padding-top: 75px;
 	margin-bottom: 10px;
 }
@@ -2136,7 +2136,7 @@ span.edit .cb .cl {
 .profile .edit .ct,
 .profile .edit .cl,
 .profile .edit .cb {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_l_gray.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_l_gray.gif);
 	height: 3px;
 }
 
@@ -2152,7 +2152,7 @@ span.edit .cb .cl {
 .welcome .ct .cl,
 .welcome .cb,
 .welcome .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_l_turq.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_l_turq.gif);
 }
 .welcome .ct {
 	background-position: 100% 0;
@@ -2201,7 +2201,7 @@ span.edit .cb .cl {
 	clear: none;
 	float: right;
 	margin: 10px 0 0 0;
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/tail_tb_short_e.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/tail_tb_short_e.gif);
 	height: 13px;
 	width: 12px;
 	right: -12px;
@@ -2211,7 +2211,7 @@ span.edit .cb .cl {
 	clear: none;
 	float: left;
 	margin: 10px 0 0 -11px;
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/tail_tb_blue_w.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/tail_tb_blue_w.gif);
 	height: 14px;
 	width: 11px;
 }
@@ -2232,7 +2232,7 @@ span.edit .cb .cl {
 .testimonial-shadow .cb,
 .testimonial-shadow .testimonial .ct .cl,
 .testimonial-shadow .cb .cl {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_tst.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/cr_tst.gif);
 }
 .testimonial-shadow .ct {
 	right: -2px;
@@ -2324,7 +2324,7 @@ span.edit .cb .cl {
 }
 
 .user-card .no-photo {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/no_photo.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/no_photo.gif) no-repeat;
 	height: 70px;
 }
 
@@ -2383,13 +2383,13 @@ span.edit .cb .cl {
 }
 
 .user-card .vitals li.send {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/mingle/gr/message_12pix.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/message_12pix.gif) no-repeat;
 	padding-left: 15px;
 	*margin-bottom: -1px;
 	white-space: nowrap;
 }
 .user-card .vitals li.invite {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/mingle/gr/invite_12pix.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/invite_12pix.gif) no-repeat;
 	padding-left: 15px;
 	*margin-bottom: -1px;
 	white-space: nowrap;
@@ -2402,7 +2402,7 @@ span.edit .cb .cl {
 	margin: 0;
 }
 .user-card .vitals .new-vitality {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/new_sparkle.gif) no-repeat 0 3px;
+	background: url(/yahoo360-rachel/assets/theme/new_sparkle.gif) no-repeat 0 3px;
 	border-top: 1px solid #d9d9d9;
 	padding-top: 3px;
 	margin-top: 3px;

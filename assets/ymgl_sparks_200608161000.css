@@ -236,7 +236,7 @@ gets main text color by default */
 }
 
 /* list bullet. default is black
-use http://l.yimg.com/us.yimg.com/i/us/cmty/ul_bullet_wht.gif
+use /yahoo360-rachel/assets/theme/ul_bullet_wht.gif
 for white bullet */
 ul.default li {
 }
@@ -914,19 +914,19 @@ playback timings (ms):
 }
 
 #ymgl-photos .body .nav input.back {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/button_rwd.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/button_rwd.gif) no-repeat;
 }
 
 #ymgl-photos .body .nav input.forward {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/button_ffwd.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/button_ffwd.gif) no-repeat;
 }
 
 #ymgl-photos .body .nav input.play {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/button_play.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/button_play.gif) no-repeat;
 }
 
 #ymgl-photos .body .nav input.pause {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/button_pause.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/button_pause.gif) no-repeat;
 }
 
 #ymgl-photos .body .footnote {
@@ -946,7 +946,7 @@ playback timings (ms):
 	float: left;
 	*clear: both;
 	*float: none;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/yphoto_album.gif) no-repeat;
+	background: url(/yahoo360-rachel/assets/theme/yphoto_album.gif) no-repeat;
 	margin: 0 0 10px 25px;
 	*margin: 10px 10px 0 13px;
 	width: 100px;
@@ -1075,7 +1075,7 @@ playback timings (ms):
 }
 
 #ymgl-friends.empty .body li {
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ghost_image.gif) no-repeat 50% 0;
+	background: url(/yahoo360-rachel/assets/theme/ghost_image.gif) no-repeat 50% 0;
 	padding-top: 72px;
 	margin-bottom: 10px;
 }
@@ -1130,7 +1130,7 @@ playback timings (ms):
 
 #ymgl-friends .body li.ghostfriend {
 	font: 74% verdana;
-	background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ghost_image.gif) no-repeat 0 0;
+	background: url(/yahoo360-rachel/assets/theme/ghost_image.gif) no-repeat 0 0;
 	padding-top: 72px;
 }
 
@@ -1159,7 +1159,7 @@ playback timings (ms):
 }
 
 #ymgl-friends .body li .testimonial-shadow .testimonial .tail {
-	background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/tail_tb_long_e.gif);
+	background-image: url(/yahoo360-rachel/assets/theme/tail_tb_long_e.gif);
 	margin: 10px -23px 0 0;
 	*margin: 10px 0 0 0;
 	width: 23px;
