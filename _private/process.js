@@ -3,12 +3,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const text = fs.readFileSync(path.join(__dirname, './y360-rachel-st3-process.html'), 'utf-8');
+const text = fs.readFileSync(path.join(__dirname, './y360-rachel-preprocess.html'), 'utf-8');
 const rawPosts = text.split('<-------->');
 
 // split comments and article
 const posts = rawPosts.map(post => {
-	const commentStartIdx = post.indexOf('-----\nCOMMENT');
+	const commentStartIdx = post.indexOf('-----\nCOMMENT'); // first index of
 
 	const body = post.substr(0, commentStartIdx).trim(); //
 	const commentSection = post.substr(commentStartIdx);
@@ -50,19 +50,20 @@ posts.forEach((post, index) => {
 	});
 
 	// process comments
+	console.log('comments', post.comments);
 	const postComments = post.comments.map(comment => {
-		const author = /comment_author: ?(.*)/.exec(comment)[1];
-		const content = /comment_body:\n([\s\S]*)/.exec(comment)[1];
-		let time = /comment_time: ?(.*)/.exec(comment)[1];
-		time = new Date(time);
+		const author = /author: ?(.*)/.exec(comment)[1];
+		const content = /body:\n([\s\S]*)/.exec(comment)[1];
+		let cmtDate = /date: ?(.*)/.exec(comment)[1];
+		cmtDate = new Date(cmtDate);
 		// fix timezone (time in the backup is UTC)
-		time.setHours(time.getHours() + 7);
-		time = toIsoString(time);
+		cmtDate.setHours(cmtDate.getHours() + 7);
+		cmtDate = toIsoString(cmtDate);
 
 		return {
 			author,
-			time,
 			content,
+			date: cmtDate,
 		};
 	});
 

@@ -9,7 +9,11 @@ left_widget: calendar.html
         <dl class="body">
             <dt class="post-head">{{ page.title }}</dt>
             <dd class="post-body last">
-                <div class="image-wrapper"> </div>
+                <div class="image-wrapper">
+                	{% if page.image %}
+					<img src="{{ page.image | relative_url }}" alt="{{page.title}}">
+					{% endif %}
+                </div>
                 <div class="content-wrapper">
 					<!-- Begin post content -->
 					{{ content }}
@@ -25,7 +29,7 @@ left_widget: calendar.html
                     <p>{{ post.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }} </p>
                     <p class="nav">
                     	{% if page.next.url %}
-                        <span>Next Post: <a href="{{ page.next.url | relative_url }}">{{page.previous.title}}</a></span>
+                        <span>Next Post: <a href="{{ page.next.url | relative_url }}">{{page.next.title}}</a></span>
 						{% endif %}
                     	{% if page.previous.url %}
                         <span>Previous Post: <a href="{{ page.previous.url | relative_url }}">{{page.previous.title}}</a></span>
@@ -55,7 +59,7 @@ left_widget: calendar.html
                 <div class="wrapper">
                     <p class="comment">{{ comment.content }}</p>
                     <p class="datestamp">
-                    	{{ comment.time | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }}
+                    	{{ comment.date | date: "%A %B %-d, %Y - %I:%M%P (%Z)" }}
                     </p>
                 </div>
             </div>
