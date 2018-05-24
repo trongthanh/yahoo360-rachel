@@ -4,5 +4,8 @@ This is a resurrection of my SO blog hosted on Yahoo! 360, recreated in Jekyll /
 
 To preview locally, install Ruby gem `bundler`, then install the `github-pages` plugins set with `bundle install` and finally execute: `bundle exec jekyll serve --incremental`.
 
+TODO:
+- Fetch and cache all external images in case Yahoo decide to shutdown domain hosting those images.
+
 ---
 © 2018 Tran Trong Thanh. All rights reserved.
