@@ -3,14 +3,20 @@
 const fs = require('fs');
 const path = require('path');
 
-const text = fs.readFileSync(path.join(__dirname, './y360-rachel-preprocess.html'), 'utf-8');
+const text = fs.readFileSync(path.join(__dirname, './y360-conan-preprocess.html'), 'utf-8');
 const rawPosts = text.split('<-------->');
-
+console.log('Found', rawPosts.length, 'posts');
 // split comments and article
-const posts = rawPosts.map(post => {
+const posts = rawPosts.map((post, index) => {
 	const commentStartIdx = post.indexOf('-----\nCOMMENT'); // first index of
-
-	const body = post.substr(0, commentStartIdx).trim(); //
+	console.log(`Posts ${index}: Comments block starts at ${commentStartIdx}`);
+	let body;
+	if (commentStartIdx === -1) {
+		// no comments
+		body = post.trim();
+	} else {
+		body = post.substr(0, commentStartIdx).trim();
+	}
 	const commentSection = post.substr(commentStartIdx);
 	const rawComments = commentSection.split('-----\nCOMMENT:');
 	const comments = rawComments.filter(item => {
@@ -28,9 +34,11 @@ const posts = rawPosts.map(post => {
 const allComments = {};
 
 posts.forEach((post, index) => {
+	console.log('Processing', index, post.body.substr(0, 50).replace(/\n/g, '\\n'));
 	let body = post.body;
 	const dateStr = /date: ?(.*)/.exec(body)[1];
 	const title = /title: ?(.*)/.exec(body)[1];
+	console.log(`date: ${dateStr} - title: ${title}`);
 	const date = new Date(dateStr);
 	// fix timezone (time in the backup is UTC)
 	date.setHours(date.getHours() + 7);
